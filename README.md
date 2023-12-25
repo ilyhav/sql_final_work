@@ -535,4 +535,4 @@ TRUNCATE TABLE Restaurants, Suppliers, Ingredients, Dishes, Orders, Clients, Rev
 
 Это удалит все данные из указанных таблиц и сбросит автоинкрементные значения (`SERIAL`). Опция `CASCADE` также удаляет данные из всех связанных таблиц.
 
-амп базы данных находиться в файле [sqldump/final.dump.sql](https://github.com/ilyhav/sql_final_work/blob/main/my_database_dump.sql)
+Дамп базы данных находиться в файле [sqldump/final.dump.sql](https://github.com/ilyhav/sql_final_work/blob/main/my_database_dump.sql)
