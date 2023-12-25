@@ -460,6 +460,10 @@ WHERE PriceRank <= 3;
 
 Этот запрос выдаст три самых дорогих блюда в каждой категории.
 
+<center>
+<img src="./img/example_1.png " />
+</center>
+
 **Запрос с подзапросом для получения средней цены блюд в каждой категории:**
 ```sql
 SELECT 
@@ -470,6 +474,10 @@ FROM
 GROUP BY 
   Category;
 ```
+
+<center>
+<img src="./img/example_2.png " />
+</center>
 
 **Запрос с CTE для подсчёта количества блюд в каждой категории:**
 ```sql
@@ -491,6 +499,10 @@ ORDER BY
   DishCount DESC;
 ```
 
+<center>
+<img src="./img/example_3.png " />
+</center>
+
 **Запрос с оконной функцией для определения ранга блюд по цене внутри каждой категории:**
 ```sql
 SELECT 
@@ -502,6 +514,10 @@ SELECT
 FROM 
   Dishes;
 ```
+
+<center>
+<img src="./img/example_4.png " />
+</center>
 
 ## Заключение ##
 
@@ -518,3 +534,5 @@ TRUNCATE TABLE Restaurants, Suppliers, Ingredients, Dishes, Orders, Clients, Rev
 ```
 
 Это удалит все данные из указанных таблиц и сбросит автоинкрементные значения (`SERIAL`). Опция `CASCADE` также удаляет данные из всех связанных таблиц.
+
+амп базы данных находиться в файле [sqldump/final.dump.sql](https://github.com/ilyhav/sql_final_work/blob/main/my_database_dump.sql)
